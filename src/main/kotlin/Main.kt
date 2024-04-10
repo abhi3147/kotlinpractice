@@ -1,10 +1,15 @@
 
 fun main() {
-    println("How many fishes?")
-    var numberOfFish: Int = (readln()).toInt()
-    when(numberOfFish) {
-        0 -> println("Empty Tank!")
-        in 1..39 -> println("Got fish!")
-        else -> println("That's a lot of fish!")
-    }
+    var fishFoodTreats : Int? = null
+    fishFoodTreats = fishFoodTreats?.dec() ?: 0
+    println(fishFoodTreats)
+
+    val school = listOf("mackerel","trout","halibut")
+    println(school)
+
+    val myList = mutableListOf("tuna", "salmon", "shark")
+    myList.remove("shark")
+
+
+
 }
